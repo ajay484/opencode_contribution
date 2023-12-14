@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  display:flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-image: linear-gradient(to right, #36383b, #2e2c31, #282124, #201715, #150c00);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+ .hello{
+  position:relative;
+}
+
+.hello:hover::after{
+  content:" ";
+  
+  position:absolute;
+  bottom:-8px;;
+  left:110px;
+  width:70%;
+  height:2px;
+  
+  background-color: white;
+ animation-name: ajay;
+ animation-duration: 4s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes ajay {
+  0%{
+    left:200px;
+    width:0;
+  }
+
+  50%{
+    left:0;
+    width:70%;
+  }
+  100%{
+    left:100%;
+    width:0%;
+  }
+  
+}
+
+p{
+  font-size:20px;
+  text-shadow : 1px 0.5px 2px rgb(137, 131, 131);
+}
+
+p::after{
+  content :"🎮💻✨";
+}
